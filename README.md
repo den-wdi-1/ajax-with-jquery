@@ -1,28 +1,44 @@
+<!--
+Market: SF
+-->
+
+![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
 # Intro to Ajax
 
-| Objectives |
-| :--- |
-| Explore Ajax and why we use it |
-| Use Ajax to GET & POST data to an API |
+## Why is this important?
+*This workshop is important because:*
+- AJAX is an essential way to make HTTP requests in modern web applications
+- They are what allows web apps to update without refreshing
+
+## What are the objectives?
+*After this workshop, developers will be able to:*
+
+- Explain Ajax and why we use it
+- Use Ajax to GET & POST data to an API
+
+## Where should we be now?
+*Before this workshop, developers should already be able to:*
+
+- Make HTTP requests using `curl` and the browser
+- Create dynamic web pages using JavaScript, HTML and CSS
 
 ## APIs
 
 An Application Program Interface (API) is the way in which you interact with a piece of software. In other words it is the interface for an application or a program.
 
   * Organizations have APIs to publicly expose parts of their program to the outside world, allowing people to send them queries and receive data (e.g. <a href="https://developer.github.com/v3" target="_blank">GitHub API</a>), but this is a narrow view of what the term fully encompasses.
-  * Remember, even an `Array` has an API. Its API consists of all the methods that can be called on it, such as: `.forEach`, `.pop`, `.length` etc. See the full list: `Object.getOwnPropertyNames(Array.prototype)`. 
+  * Remember, even an `Array` has an API. Its API consists of all the methods that can be called on it, such as: `.forEach`, `.pop`, `.length` etc. See the full list: `Object.getOwnPropertyNames(Array.prototype)`.
 
 A **GUI** exists to make an application more convenient for the user. An **API** does the same for its users, but with a lexical rather than a graphical interface.
 
-## Ajax
+## About Ajax
 
 Asynchronous JavaScript And XML (Ajax) allows us to make requests to a server (ours or another application's) without refreshing the page. You may also hear the term `XMLHttpRequest`. This is the same thing as Ajax! In fact, `window` object in the Browser has available to it another object, `XMLHttpRequest`. This is how you would make these types of requests without using jQuery.
 
-#### Why do we care?
+Ajax lets us exchange data with the server behind the scenes. When a change is made on the client we can send off an Ajax Request to notify the server of what just happened. This is an important way to maintain state between a client and a server that communicate in HTTP, an inherently stateless protocol.
 
-* Ajax lets us exchange data with the server behind the scenes. When a change is made on the client we can send off an Ajax Request to notify the server of what just happened. This is an important way to maintain state between a client and a server that communicate in HTTP, an inherently stateless protocol.
-
-* Limiting page reloads makes our web apps feel *faster* and mostly gives our users a *better experience*. Imagine if you experienced a full page refresh every time you "liked" a post on Facebook...
+Limiting page reloads makes our web apps feel *faster* and mostly gives our users a *better experience*. Imagine if you experienced a full page refresh every time you "liked" a post on Facebook...
 
 #### How do we use it?
 
@@ -30,7 +46,7 @@ jQuery gives us a [several methods](https://api.jquery.com/category/Ajax) for ma
 
 ## GET and POST
 
-The HTTP protocol was designed specifically for web browsers and servers to communicate with each other in a request/responce cycle.
+The HTTP protocol was designed specifically for web browsers and servers to communicate with each other in a request/response cycle.
 
 `GET` and `POST` are the most common verbs used in HTTP requests:
 
@@ -147,6 +163,14 @@ $.get(endpoint)
 ;
 ```
 
-## Further Reading
+## Independent Practice
+We will be using our new AJAX skills in this afternoon's labs.
 
-* What is [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)?
+## Closing Thoughts
+- AJAX is how we can make HTTP requests to an API without refreshing the page using JavaScript
+- jQuery gives us some helper methods to make this easier
+- AJAX can be done in vanilla JavaScript too
+- Describe a use case of AJAX using a specific example
+
+## Additional Resources
+- What is [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)?
