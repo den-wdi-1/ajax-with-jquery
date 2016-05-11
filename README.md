@@ -117,21 +117,21 @@ var book_data = {
   author: "Lowis Lowry"
 };
 
-$.post('/books', book, function(data) {
+$.post('/books', book_data, function(data) {
   console.log(data);
 });
 ```
 
 #### Ajax and Event Handlers
 
-We can combine Ajax calls with any jQuery event handlers. You may want to execute an Ajax call when the user clicks and button or submits a form.
+We can combine Ajax calls with any jQuery event handlers. You may want to execute an Ajax call when the user clicks a button or submits a form.
 
 ```js
 var endpoint = 'https://api.spotify.com/v1/search?q=goodbye&type=artist'
 
 // click event on button
 $('button').on('click', function(event) {
-  $.get(spotify_endpoint, function(data) {
+  $.get(endpoint, function(data) {
     console.log(data);
   });
 });
