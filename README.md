@@ -15,6 +15,7 @@ Market: SF
 *After this workshop, developers will be able to:*
 
 - Explain Ajax and why we use it
+- Identify new tools for working with web API 
 - Use Ajax to GET & POST data to an API
 
 ## Where should we be now?
@@ -32,7 +33,22 @@ An Application Program Interface (API) is the way in which you interact with a p
 
 A **GUI** exists to make an application more convenient for the user. An **API** does the same for its users, but with a lexical rather than a graphical interface.
 
+### API tools
+How could we see the results of using the API request ``https://api.spotify.com/v1/search?q=adele&type=artist``
+<details>
+Put it in a webbrowser! Just type [https://api.spotify.com/v1/search?q=adele&type=artist](https://api.spotify.com/v1/search?q=adele&type=artist) in the navigation bar.
+</details>
+
+There are a variety was to format JSON in a web browser. I use [JSONView](https://chrome.google.com/webstore/detail/jsonview/chklaanhfefbnpoihckbnefhakgolnmc?hl=en), but there are others you can use too.
+
+If we're testing AJAX with jQuery 
+<details>
+We can create boilerplate website but if we're just trying to test something we can use [JSFiddle](https://jsfiddle.net/)
+</details>
+
 ## About Ajax
+
+![client/server](https://mdn.mozillademos.org/files/4291/client-server.png)
 
 Asynchronous JavaScript And XML (Ajax) allows us to make requests to a server (ours or another application's) without refreshing the page. You may also hear the term `XMLHttpRequest`. This is the same thing as Ajax! In fact, `window` object in the Browser has available to it another object, `XMLHttpRequest`. This is how you would make these types of requests without using jQuery.
 
