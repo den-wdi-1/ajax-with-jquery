@@ -190,3 +190,7 @@ We will be using our new AJAX skills in this afternoon's labs.
 
 ## Additional Resources
 - What is [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS)?
+
+## Licensing
+All content is licensed under a CC­BY­NC­SA 4.0 license.
+All software code is licensed under GNU GPLv3. For commercial use or alternative licensing, please contact legal@ga.co.
